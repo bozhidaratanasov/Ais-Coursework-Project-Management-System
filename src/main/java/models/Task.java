@@ -1,10 +1,17 @@
-
+package models;
 import java.util.*;
 
 /**
  * 
  */
 public class Task {
+	
+	private String name;
+    private String description;
+    private Participant participant;
+    private Project project;
+    private Status status;
+    private Set<Task> subtasks;
 
     /**
      * Default constructor
@@ -15,44 +22,13 @@ public class Task {
     /**
      * 
      */
-    private String name;
-
-    /**
-     * 
-     */
-    private String description;
-
-    /**
-     * 
-     */
-    private Participant participant;
-
-    /**
-     * 
-     */
-    private Project project;
-
-    /**
-     * 
-     */
-    private Status status;
-
-    /**
-     * 
-     */
-    private Set<Task> subtasks;
-
-    /**
-     * 
-     */
-    private Task task;
+    
 
     /**
      * @return
      */
     public String getName() {
-        // TODO implement here
-        return "";
+        return this.name;
     }
 
     /**
@@ -60,16 +36,14 @@ public class Task {
      * @return
      */
     public void setName(String name) {
-        // TODO implement here
-        return null;
+        this.name = name;
     }
 
     /**
      * @return
      */
     public String getDescription() {
-        // TODO implement here
-        return "";
+       return this.description;
     }
 
     /**
@@ -77,16 +51,14 @@ public class Task {
      * @return
      */
     public void setDescription(String description) {
-        // TODO implement here
-        return null;
+        this.description = description;
     }
 
     /**
      * @return
      */
     public Participant getParticipant() {
-        // TODO implement here
-        return null;
+        return this.participant;
     }
 
     /**
@@ -94,16 +66,14 @@ public class Task {
      * @return
      */
     public void setParticipant(Participant participant) {
-        // TODO implement here
-        return null;
+        this.participant = participant;
     }
 
     /**
      * @return
      */
     public Project getProject() {
-        // TODO implement here
-        return null;
+        return this.project;
     }
 
     /**
@@ -111,16 +81,14 @@ public class Task {
      * @return
      */
     public void setProject(Project project) {
-        // TODO implement here
-        return null;
+        this.project = project;
     }
 
     /**
      * @return
      */
     public Status getStatus() {
-        // TODO implement here
-        return null;
+        return this.status;
     }
 
     /**
@@ -128,16 +96,14 @@ public class Task {
      * @return
      */
     public void setStatus(Status status) {
-        // TODO implement here
-        return null;
+       this.status = status;
     }
 
     /**
      * @return
      */
     public Set<Task> getSubtasks() {
-        // TODO implement here
-        return null;
+        return this.subtasks;
     }
 
     /**
@@ -145,8 +111,7 @@ public class Task {
      * @return
      */
     public void setSubtasks(Set<Task> subtasks) {
-        // TODO implement here
-        return null;
+        this.subtasks = subtasks;
     }
 
 }

@@ -1,10 +1,13 @@
-
+package models;
 import java.util.*;
 
 /**
  * 
  */
 public class Role {
+	
+	private String roleCode;
+    private Set<Participant> participants;
 
     /**
      * Default constructor
@@ -15,19 +18,13 @@ public class Role {
     /**
      * 
      */
-    private String roleCode;
-
-    /**
-     * 
-     */
-    private Set<Participant> participants;
+    
 
     /**
      * @return
      */
     public String getRoleCode() {
-        // TODO implement here
-        return "";
+        return this.roleCode;
     }
 
     /**
@@ -35,25 +32,22 @@ public class Role {
      * @return
      */
     public void setRoleCode(String roleCode) {
-        // TODO implement here
-        return null;
+       this.roleCode = roleCode;
     }
 
     /**
      * @return
      */
     public Set<Participant> getParticipants() {
-        // TODO implement here
-        return null;
+        return this.participants;
     }
 
     /**
      * @param users 
      * @return
      */
-    public void setParticipants(Set<Participant> users) {
-        // TODO implement here
-        return null;
+    public void setParticipants(Set<Participant> participants) {
+        this.participants = participants;
     }
 
 }

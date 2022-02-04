@@ -1,10 +1,16 @@
-
+package models;
 import java.util.*;
 
 /**
  * 
  */
 public class Project {
+	
+	 private String name;
+	 private String description;
+	 private Set<Participant> participants;
+	 private Set<Task> tasks;
+	 private Set<Project> subprojects;
 
     /**
      * Default constructor
@@ -15,41 +21,13 @@ public class Project {
     /**
      * 
      */
-    private String name;
-
-    /**
-     * 
-     */
-    private String description;
-
-    /**
-     * 
-     */
-    private Set<Participant> participants;
-
-    /**
-     * 
-     */
-    private Set<Task> tasks;
-
-
-
-    /**
-     * 
-     */
-    private Set<Project> subprojects;
-
-    /**
-     * 
-     */
-    private Project project;
+   
 
     /**
      * @return
      */
     public String getName() {
-        // TODO implement here
-        return "";
+        return this.name;
     }
 
     /**
@@ -57,16 +35,14 @@ public class Project {
      * @return
      */
     public void setName(String name) {
-        // TODO implement here
-        return null;
+        this.name = name;
     }
 
     /**
      * @return
      */
     public String getDescription() {
-        // TODO implement here
-        return "";
+        return this.description;
     }
 
     /**
@@ -74,16 +50,14 @@ public class Project {
      * @return
      */
     public void setDescription(String description) {
-        // TODO implement here
-        return null;
+        this.description = description;
     }
 
     /**
      * @return
      */
     public Set<Participant> getParticipants() {
-        // TODO implement here
-        return null;
+        return this.participants;
     }
 
     /**
@@ -91,16 +65,14 @@ public class Project {
      * @return
      */
     public void setParticipants(Set<Participant> participants) {
-        // TODO implement here
-        return null;
+        this.participants = participants;
     }
 
     /**
      * @return
      */
     public Set<Task> getTasks() {
-        // TODO implement here
-        return null;
+        return this.tasks;
     }
 
     /**
@@ -108,16 +80,14 @@ public class Project {
      * @return
      */
     public void setTasks(Set<Task> tasks) {
-        // TODO implement here
-        return null;
+        this.tasks = tasks;
     }
 
     /**
      * @return
      */
     public Set<Project> getSubprojects() {
-        // TODO implement here
-        return null;
+    	return this.subprojects;
     }
 
     /**
@@ -125,8 +95,7 @@ public class Project {
      * @return
      */
     public void setSubprojects(Set<Project> subprojects) {
-        // TODO implement here
-        return null;
+        this.subprojects = subprojects;
     }
 
 }

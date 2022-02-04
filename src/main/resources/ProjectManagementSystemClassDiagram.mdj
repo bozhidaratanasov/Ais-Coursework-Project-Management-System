@@ -496,7 +496,7 @@
 											"font": "Arial;13;1",
 											"left": 509,
 											"top": 119,
-											"width": 259.75244140625,
+											"width": 294.4423828125,
 											"height": 13,
 											"text": "Role"
 										},
@@ -531,7 +531,7 @@
 									"font": "Arial;13;0",
 									"left": 504,
 									"top": 112,
-									"width": 269.75244140625,
+									"width": 304.4423828125,
 									"height": 25,
 									"stereotypeLabel": {
 										"$ref": "AAAAAAF+xJIK7MGfmh4="
@@ -568,7 +568,7 @@
 											"font": "Arial;13;0",
 											"left": 509,
 											"top": 142,
-											"width": 259.75244140625,
+											"width": 294.4423828125,
 											"height": 13,
 											"text": "-roleCode: String",
 											"horizontalAlignment": 0
@@ -577,7 +577,7 @@
 									"font": "Arial;13;0",
 									"left": 504,
 									"top": 137,
-									"width": 269.75244140625,
+									"width": 304.4423828125,
 									"height": 23
 								},
 								{
@@ -602,7 +602,7 @@
 											"font": "Arial;13;0",
 											"left": 509,
 											"top": 165,
-											"width": 259.75244140625,
+											"width": 294.4423828125,
 											"height": 13,
 											"text": "+getRoleCode(): String",
 											"horizontalAlignment": 0
@@ -619,7 +619,7 @@
 											"font": "Arial;13;0",
 											"left": 509,
 											"top": 180,
-											"width": 259.75244140625,
+											"width": 294.4423828125,
 											"height": 13,
 											"text": "+setRoleCode(roleCode: String): void",
 											"horizontalAlignment": 0
@@ -636,7 +636,7 @@
 											"font": "Arial;13;0",
 											"left": 509,
 											"top": 195,
-											"width": 259.75244140625,
+											"width": 294.4423828125,
 											"height": 13,
 											"text": "+getParticipants(): Participant[0..*]",
 											"horizontalAlignment": 0
@@ -653,16 +653,16 @@
 											"font": "Arial;13;0",
 											"left": 509,
 											"top": 210,
-											"width": 259.75244140625,
+											"width": 294.4423828125,
 											"height": 13,
-											"text": "+setParticipants(users: Participant[0..*]): void",
+											"text": "+setParticipants(participants: Participant[0..*]): void",
 											"horizontalAlignment": 0
 										}
 									],
 									"font": "Arial;13;0",
 									"left": 504,
 									"top": 160,
-									"width": 269.75244140625,
+									"width": 304.4423828125,
 									"height": 68
 								},
 								{
@@ -702,7 +702,7 @@
 							"containerChangeable": true,
 							"left": 504,
 							"top": 112,
-							"width": 269.75244140625,
+							"width": 304.4423828125,
 							"height": 116,
 							"nameCompartment": {
 								"$ref": "AAAAAAF+xJIK7MGegjk="
@@ -742,7 +742,7 @@
 									"visible": false,
 									"font": "Arial;13;0",
 									"left": 415,
-									"top": 211,
+									"top": 214,
 									"height": 13,
 									"alpha": 1.5707963267948966,
 									"distance": 15,
@@ -763,7 +763,7 @@
 									"visible": null,
 									"font": "Arial;13;0",
 									"left": 411,
-									"top": 197,
+									"top": 200,
 									"height": 13,
 									"alpha": 1.5707963267948966,
 									"distance": 30,
@@ -784,7 +784,7 @@
 									"visible": false,
 									"font": "Arial;13;0",
 									"left": 424,
-									"top": 240,
+									"top": 243,
 									"height": 13,
 									"alpha": -1.5707963267948966,
 									"distance": 15,
@@ -803,8 +803,8 @@
 										"$ref": "AAAAAAF+xJNh1sHkppQ="
 									},
 									"font": "Arial;13;0",
-									"left": 343,
-									"top": 221,
+									"left": 344,
+									"top": 222,
 									"width": 70.80810546875,
 									"height": 13,
 									"alpha": 0.34302383729005087,
@@ -827,7 +827,7 @@
 									"visible": false,
 									"font": "Arial;13;0",
 									"left": 357,
-									"top": 215,
+									"top": 217,
 									"height": 13,
 									"alpha": 0.7853981633974483,
 									"distance": 40,
@@ -847,7 +847,7 @@
 									},
 									"font": "Arial;13;0",
 									"left": 353,
-									"top": 256,
+									"top": 258,
 									"width": 19.5126953125,
 									"height": 13,
 									"alpha": -0.5235987755982988,
@@ -869,7 +869,7 @@
 									},
 									"font": "Arial;13;0",
 									"left": 456,
-									"top": 195,
+									"top": 198,
 									"width": 35.76904296875,
 									"height": 13,
 									"alpha": -0.5235987755982988,
@@ -890,8 +890,8 @@
 									},
 									"visible": false,
 									"font": "Arial;13;0",
-									"left": 467,
-									"top": 182,
+									"left": 468,
+									"top": 186,
 									"height": 13,
 									"alpha": -0.7853981633974483,
 									"distance": 40,
@@ -910,7 +910,7 @@
 									},
 									"font": "Arial;13;0",
 									"left": 476,
-									"top": 220,
+									"top": 223,
 									"width": 19.5126953125,
 									"height": 13,
 									"alpha": 0.5235987755982988,
@@ -957,7 +957,7 @@
 								"$ref": "AAAAAAF+xIzn4cEed1Y="
 							},
 							"lineStyle": 1,
-							"points": "338:257;503:208",
+							"points": "338:258;503:212",
 							"showVisibility": true,
 							"nameLabel": {
 								"$ref": "AAAAAAF+xJNh18HoQNM="
@@ -4240,7 +4240,7 @@
 									"_parent": {
 										"$ref": "AAAAAAF+xJSPR8LAx3k="
 									},
-									"name": "users",
+									"name": "participants",
 									"type": {
 										"$ref": "AAAAAAF+xIzn4MEcaW4="
 									},

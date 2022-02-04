@@ -1,10 +1,13 @@
-
+package models;
 import java.util.*;
 
 /**
  * 
  */
 public class Status {
+	
+	 private String statusCode;
+	 private Set<Task> tasks;
 
     /**
      * Default constructor
@@ -15,19 +18,13 @@ public class Status {
     /**
      * 
      */
-    private String statusCode;
-
-    /**
-     * 
-     */
-    private Set<Task> tasks;
+   
 
     /**
      * @return
      */
     public String getStatusCode() {
-        // TODO implement here
-        return "";
+        return this.statusCode;
     }
 
     /**
@@ -35,16 +32,14 @@ public class Status {
      * @return
      */
     public void setStatusCode(String statusCode) {
-        // TODO implement here
-        return null;
+        this.statusCode = statusCode;
     }
 
     /**
      * @return
      */
     public Set<Task> getTasks() {
-        // TODO implement here
-        return null;
+        return this.tasks;
     }
 
     /**
@@ -52,8 +47,7 @@ public class Status {
      * @return
      */
     public void setTasks(Set<Task> tasks) {
-        // TODO implement here
-        return null;
+        this.tasks = tasks;
     }
 
 }

@@ -1,3 +1,4 @@
+package models;
 
 import java.util.*;
 
@@ -5,6 +6,13 @@ import java.util.*;
  * 
  */
 public class Participant {
+	
+	private String firstName;
+    private String lastName;
+    private String email;
+    private Set<Role> roles;
+    private Set<Project> projects;
+    private Set<Task> tasks;
 
     /**
      * Default constructor
@@ -12,42 +20,13 @@ public class Participant {
     public Participant() {
     }
 
-    /**
-     * 
-     */
-    private String firstName;
-
-    /**
-     * 
-     */
-    private String lastName;
-
-    /**
-     * 
-     */
-    private String email;
-
-    /**
-     * 
-     */
-    private Set<Role> roles;
-
-    /**
-     * 
-     */
-    private Set<Project> projects;
-
-    /**
-     * 
-     */
-    private Set<Task> tasks;
+    
 
     /**
      * @return
      */
     public String getFirstName() {
-        // TODO implement here
-        return "";
+       return this.firstName;
     }
 
     /**
@@ -55,16 +34,14 @@ public class Participant {
      * @return
      */
     public void setFirstName(String firstName) {
-        // TODO implement here
-        return null;
+        this.firstName = firstName;
     }
 
     /**
      * @return
      */
     public String getLastName() {
-        // TODO implement here
-        return "";
+        return this.lastName;
     }
 
     /**
@@ -72,16 +49,14 @@ public class Participant {
      * @return
      */
     public void setLastName(String lastName) {
-        // TODO implement here
-        return null;
+        this.lastName = lastName;
     }
 
     /**
      * @return
      */
     public String getEmail() {
-        // TODO implement here
-        return "";
+        return this.email;
     }
 
     /**
@@ -89,16 +64,14 @@ public class Participant {
      * @return
      */
     public void setEmail(String email) {
-        // TODO implement here
-        return null;
+        this.email = email;
     }
 
     /**
      * @return
      */
     public Set<Role> getRoles() {
-        // TODO implement here
-        return null;
+        return this.roles;
     }
 
     /**
@@ -106,16 +79,14 @@ public class Participant {
      * @return
      */
     public void setRoles(Set<Role> roles) {
-        // TODO implement here
-        return null;
+        this.roles = roles;
     }
 
     /**
      * @return
      */
     public Set<Project> getProjects() {
-        // TODO implement here
-        return null;
+        return this.projects;
     }
 
     /**
@@ -123,16 +94,14 @@ public class Participant {
      * @return
      */
     public void setProjects(Set<Project> projects) {
-        // TODO implement here
-        return null;
+        this.projects = projects;
     }
 
     /**
      * @return
      */
     public Set<Task> getTasks() {
-        // TODO implement here
-        return null;
+        return this.tasks;
     }
 
     /**
@@ -140,8 +109,7 @@ public class Participant {
      * @return
      */
     public void setTasks(Set<Task> tasks) {
-        // TODO implement here
-        return null;
+        this.tasks = tasks;
     }
 
 }
