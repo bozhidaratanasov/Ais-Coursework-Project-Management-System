@@ -6,11 +6,11 @@ import java.util.*;
  */
 public class Project {
 	
-	 private String name;
-	 private String description;
-	 private Set<Participant> participants;
-	 private Set<Task> tasks;
-	 private Set<Project> subprojects;
+	private String name;
+	private String description;
+	private Set<Participant> participants;
+	private Set<Task> tasks;
+	private Set<Project> subprojects;
 
     /**
      * Default constructor

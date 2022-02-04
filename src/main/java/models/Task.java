@@ -18,6 +18,12 @@ public class Task {
      */
     public Task() {
     }
+    
+    public Task(String name, String description, Project project) {
+    	this.name = name;
+    	this.description = description;
+    	this.project = project;
+    }
 
     /**
      * 
