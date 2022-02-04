@@ -60,5 +60,21 @@ public class TaskManagementScreenModel {
 	public String getMessage() {
 		return this.message;
 	}
+	
+	public boolean checkTaskExists() {
+		return TaskManagementService.checkTaskExists();
+	}
+	
+	public boolean checkParticipantIsAssigned() {
+		return TaskManagementService.checkParticipantIsAssigned();
+	}
+	
+	public void assignParticipant() {
+		TaskManagementService.assignParticipant(this.participant);
+	}
+	
+	public void clickStartDevelopingButton() {
+		this.message = TaskManagementService.changeTaskStatus();
+	}
 
 }

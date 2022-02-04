@@ -5,6 +5,7 @@ import static org.junit.Assert.assertEquals;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
+import models.Participant;
 import models.Project;
 import task.management.model.TaskManagementScreenModel;
 
@@ -45,6 +46,43 @@ public class TaskManagementSteps {
 	@Then("^Вижда съобщение за непълни данни$")
 	public void receiveMissingDataMessage() throws Throwable {
 	    assertEquals("Непълни данни!", taskManagementScreenModel.getMessage());
+	}
+	
+	@Given("^Задачата е създадена$")
+	public void taskIsCreated() throws Throwable {
+	    assertEquals(true, taskManagementScreenModel.checkTaskExists());
+	}
+
+	@When("^Не е назначен разработчик към нея$")
+	public void participantIsNotAssigned() throws Throwable {
+	    assertEquals(false, taskManagementScreenModel.checkParticipantIsAssigned());
+	}
+
+	@When("^Натисне бутона за започване на работа$")
+	public void clickStartDevelopingButton() throws Throwable {
+	    taskManagementScreenModel.clickStartDevelopingButton();
+	}
+
+	@Then("^Вижда съобщение за грешка, поради липса на назначен работник$")
+	public void receiveErrorMessageDueToParticipantNotAssigned() throws Throwable {
+	    assertEquals("Задачата не е пусната в процес на разработка, защото не е назначен работник към нея!", 
+	    		taskManagementScreenModel.getMessage());
+	}
+	
+	@Given("^Назначаване на разработчик към задачата$")
+	public void assignParticipant() throws Throwable {
+	    taskManagementScreenModel.setParticipant(new Participant());
+	    taskManagementScreenModel.assignParticipant();
+	}
+	
+	@When("^Има назначен разработчик към нея$")
+	public void participantIsAssigned() throws Throwable {
+	    assertEquals(true, taskManagementScreenModel.checkParticipantIsAssigned());
+	}
+
+	@Then("^Вижда съобщение за успешно започване на работа върху задачата$")
+	public void receiveMessageForSuccessfulStartOfDeveloping() throws Throwable {
+	    assertEquals("Задачата е успешно пусната в процес на разработка! Статус: В процес на разработка", taskManagementScreenModel.getMessage());
 	}
 
 }
