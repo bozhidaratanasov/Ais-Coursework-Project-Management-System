@@ -69,12 +69,24 @@ public class TaskManagementScreenModel {
 		return TaskManagementService.checkParticipantIsAssigned();
 	}
 	
+	public boolean checkTaskIsFinished() {
+		return TaskManagementService.checkTaskIsFinished();
+	}
+	
 	public void assignParticipant() {
 		TaskManagementService.assignParticipant(this.participant);
 	}
 	
 	public void clickStartDevelopingButton() {
-		this.message = TaskManagementService.changeTaskStatus();
+		this.message = TaskManagementService.changeTaskStatus("StartDevelopingButton");
+	}
+	
+	public void clickDeclineTaskButton() {
+		this.message = TaskManagementService.changeTaskStatus("DeclineTaskButton");
+	}
+	
+	public void clickFinishTaskButton() {
+		this.message = TaskManagementService.changeTaskStatus("FinishTaskButton");
 	}
 
 }

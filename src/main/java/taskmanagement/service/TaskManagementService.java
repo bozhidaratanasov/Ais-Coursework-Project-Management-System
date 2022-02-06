@@ -40,12 +40,39 @@ public class TaskManagementService {
 		return true;
 	}
 	
-	public static String changeTaskStatus() {
-		if (taskDb.get(0).getParticipant() != null) {
-			taskDb.get(0).setStatus(new Status("В процес на разработка"));
-			return "Задачата е успешно пусната в процес на разработка! Статус: " + taskDb.get(0).getStatus().getStatusCode();
+	public static boolean checkTaskIsFinished() {
+		if (taskDb.get(0).getStatus().getStatusCode() == "Завършена")
+			return true;
+		
+		return false;
+	}
+	
+	public static String changeTaskStatus(String clickedButton) {
+		
+		Task task = taskDb.get(0);
+		
+		if (checkTaskIsFinished())
+			return "Задачата е завършена и нейният статус не може да бъде променян!";
+		
+		if (clickedButton == "StartDevelopingButton") {
+			if (checkParticipantIsAssigned()) {
+				task.setStatus(new Status("В процес на разработка"));
+				return "Задачата е успешно пусната в процес на разработка! Статус: " + task.getStatus().getStatusCode();
+			}
+			
+			return "Задачата не е пусната в процес на разработка, защото не е назначен работник към нея!";
 		}
 		
-		return "Задачата не е пусната в процес на разработка, защото не е назначен работник към нея!";
+		else if (clickedButton == "DeclineTaskButton") {
+			task.setStatus(new Status("Отказана"));
+			return "Задачата е успешно отказана! Статус: " + task.getStatus().getStatusCode();
+		}
+		
+		else if (clickedButton == "FinishTaskButton") {
+			task.setStatus(new Status("Завършена"));
+			return "Задачата е успешно завършена! Статус: " + task.getStatus().getStatusCode();
+		}
+		
+		return "";
 	}
 }
